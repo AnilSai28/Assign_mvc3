@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>index</title>
+</head>
+<body>
+    <div align="center">
+        @Html.Action("getprofiledetails","student")
+        <h1>
+            Welcome to MVC application
+            <br/>
+            User id : @ViewBag.loginid
+            <br/>
+            @Html.ActionLink("search","search","student")
+        </h1> 
+    </div>
+</body>
+</html>
